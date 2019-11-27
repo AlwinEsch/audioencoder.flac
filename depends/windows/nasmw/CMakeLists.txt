@@ -8,7 +8,7 @@ externalproject_add(nasmw
                     BINARY_DIR ${PROJECT_SOURCE_DIR}
                     INSTALL_DIR ${PROJECT_SOURCE_DIR}
                     CONFIGURE_COMMAND ""
-                    BUILD_COMMAND nmake /f Mkfiles/msvc.mak
+                    BUILD_COMMAND nmake /e /f Mkfiles/msvc.mak
                     INSTALL_COMMAND "")
 
 install(PROGRAMS nasm.exe DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
